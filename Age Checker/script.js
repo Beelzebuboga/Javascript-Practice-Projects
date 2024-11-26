@@ -6,7 +6,7 @@ let age;
 ageCheck.onclick = function(){
     age = myAge.value;
     age = Number(age);
-    if(age>=100){
+    if(age >=100 ){
         ageLabel.textContent = 'You are too old, you cannot enter this site';
     }
     else if(age == 0){
