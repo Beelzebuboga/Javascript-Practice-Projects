@@ -1,0 +1,25 @@
+
+body{
+    text-align: center;
+}
+button{
+    font-size: large;
+    padding: 10px 40px;
+}
+label{
+    font-weight: bold;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 20px;
+    background-color: grey;
+    padding: 20px;
+}
+.box{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 20px;
+    
+}
