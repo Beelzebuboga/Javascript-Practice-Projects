@@ -658,6 +658,163 @@
 // can be created by using querySelector All(){
 // similar to an array but no(map,filter, reduce)
 // Nodelist wont update to automatically reflect
+
+
+// classList = element property in Javascript used to interact with an element's list of classes. Allows you to make reusable classes for many elements across your document
+
+//add
+//remove
+//toggle(Remove if present, Add if not)
+//replace(oldClass, newClass)
+// contains()
+
+// const myButton = document.getElementById("myButton");
+// myButton.addEventListener("mouseover", event =>{
+//     event.target.classList.toggle("hover");
+    
+// })
+// myButton.addEventListener("mouseout", event =>{
+//     event.target.classList.toggle("hover");
+    
+// })
+// myButton.classList.add("enabled");
+
+
+// myButton.classList.add("enabled");
+// myButton.addEventListener("click", event =>{
+//     if(event.target.classList.contains("disabled")){
+//         event.target.textContent += "Good";
+        
+
+//     }else{
+//         event.target.classList.replace("enabled","disabled");
+//     }
+// });
+
+
+//promises = an object that manages asynchronous operation.
+// wrap a promise object around {asynchronous code}
+// "I promise to return a value"
+// PENDING -> RESOLVED OR REJECTED
+// new Promises(resolve, reject) => {asynchronous code}
+
+//DO THESE CHORES IN ORDER
+//WALK THE DOG
+//CLEAN THE KITCHEN
+//TAKE OUT THE TRASH
+// function walkDog(){
+   
+//     return new Promise((resolve, reject) => {
+//         setTimeout(()=> {
+//             const dogwalked = true;
+//             if(dogwalked){
+//             resolve("you walk the dog");
+//             }
+//             else{
+//             reject("you didnt walk the dog")
+//             }
+//         }, 1500);
+// });
+// };
+// function cleanKitchen(){
+//     return new Promise((resolve,reject) => {
+//     setTimeout(()=> {
+//         const kitchenCleaned = false;
+//         if(kitchenCleaned){
+//         resolve("you clean the kitchen");
+//         }
+//         else{
+//         reject("you didnt clean the kitchen");
+//         }
+//     }, 2500)
+// });
+
+// }
+// function takeOutTrash(){
+//     return new Promise((resolve, reject)=>{
+//     setTimeout(()=> {
+//         const trashTakenOut = false;
+//         if(trashTakenOut){
+//         resolve("you take out the trash");
+//         }else{
+//             reject("you didnt take out the trash");
+//         }
+//     }, 3500)
+// });
+// }
+
+// walkDog().then(value => {console.log(value);return cleanKitchen()})
+//     .then(value => {console.log(value); return takeOutTrash()})
+//     .then(value => {console.log(value); console.log("You have finished all the chores")})
+//     .catch(error => {console.log(error)})
+
+// Async/Await = Async = makes a function return a promise
+// Await = makes the function wait for the promise to resolve before continuing;
+// allows you to write synchronous code in a synchronous manner async doesnt have resolve or reject parameters 
+// everything after await is placed in an event queue
+
+
+
+// async function walkDog(){
+   
+//     return new Promise((resolve, reject) => {
+//         setTimeout(()=> {
+//             const dogwalked = true;
+//             if(dogwalked){
+//             resolve("you walk the dog");
+//             }
+//             else{
+//             reject("you didnt walk the dog")
+//             }
+//         }, 1500);
+// });
+// };
+// function cleanKitchen(){
+//     return new Promise((resolve,reject) => {
+//     setTimeout(()=> {
+//         const kitchenCleaned = false;
+//         if(kitchenCleaned){
+//         resolve("you clean the kitchen");
+//         }
+//         else{
+//         reject("you didnt clean the kitchen");
+//         }
+//     }, 2500)
+// });
+
+// }
+// function takeOutTrash(){
+//     return new Promise((resolve, reject)=>{
+//     setTimeout(()=> {
+//         const trashTakenOut = false;
+//         if(trashTakenOut){
+//         resolve("you take out the trash");
+//         }else{
+//             reject("you didnt take out the trash");
+//         }
+//     }, 3500)
+// });
+// }
+
+// async function doChores(){
+//     try{
+//     const walkedDogResult = await walkDog();
+//     console.log(walkedDogResult);
+//     const cleanKitchenResult = await cleanKitchen();
+//     console.log(cleanKitchenResult);
+    
+//     const takeOutTrashResult = await walkDog();
+//     console.log(takeOutTrashResult  );
+
+//     console.log("You have finished all the chores");
+//     }
+//     catch(error){
+//         console.error(error);
+//     }
+// }
+
+// doChores();
+
  
 
 
