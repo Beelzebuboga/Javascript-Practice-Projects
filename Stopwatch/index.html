@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button onclick="setTimeout()">START</button>
-    <button onclick="clearTimer()">CLEAR</button>
+    <h1 id="myH1">Stopwatch</h1>
+    <div id="container">
+        <div id="display">00:00:00:00</div>
+        <div id="controls">
+            <button id="startBtn" onclick="start()">Start</button>
+            <button id="stopBtn" onclick="stop()">Stop</button>
+            <button id="clearBtn" onclick="reset()">Clear</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

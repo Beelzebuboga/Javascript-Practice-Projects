@@ -598,11 +598,67 @@
 //setTimeout = allows to schedule the time for execution
 //createTimeout =can cancel a timeout before ut triggers
 
-function sayHello(){
-window.alert("Hello");
+// function sayHello(){
+// window.alert("Hello");
 
     
-}
-setTimeout(sayHello,3000);
-setTimeout(function(){window.alert("Hello")},5000);
-setTimeout(()=>window.alert("Hello"),5000)
+// }
+// setTimeout(sayHello,3000);
+// setTimeout(function(){window.alert("Hello")},5000);
+// setTimeout(()=>window.alert("Hello"),5000)
+
+
+// ES6 - An external file that contains reusable code that can be imported into other Javascript files.
+// Write reusable code for many different apps.
+//  Can  contain variables, classes, functions ... and more
+// Introduced as part of ECMAScript 2015 update
+
+// import {PI, getCircumference, getArea, getVolume} from `./mathUtil.js`;
+
+//synchronous = execute line by line consecutively in a sequential manner code that waits for an operation to complete
+
+//asynchronous = Allows multiple operations to be performed concurrently without waiting doesn't block the execution flow and allows the program to continue(I/O operations, network requests, fetching data) Handled with: callbacks, Promises, Async/Await
+
+// function func1(callback){
+//     setTimeout(()=>{console.log("Task 1");
+//         callback()}, 3000);
+// }
+// function func2(){
+//     console.log("Task 2");
+//     console.log("Task 3");
+//     console.log("Task 4");
+// }
+// func1(func2);
+
+
+// Error = an object that is created to represent a problem that occurs occur often with user input or establishing a connection
+// try{} = encloses code that might potentially cause an error
+// catch{} = catch and handle any thrown error from try{}
+// finally{} = (optional) Always executes. Used mostly for clean up ex. close files, close connection, release resources
+// try{
+//     const x= window.prompt("Enter your x");
+//     console.log(x);
+//     if(x=='0'){
+//         throw new Error("Your x dont have value"); //throwing new error
+//     }
+// }
+// catch(error){
+//     console.error(error);
+// }
+// finally{
+//     console.log("This always executes");
+// }
+// // NETWORK ERRORS
+// // PROMISE REJECTION
+// // SECURITY ERROR
+// console.log("You have reached the end!");
+
+
+//nodelist - static collection of HTML elements by (id, class, element)
+// can be created by using querySelector All(){
+// similar to an array but no(map,filter, reduce)
+// Nodelist wont update to automatically reflect
+ 
+
+
+
